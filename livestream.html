@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACS Egham Esports</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      </div>
+      <div class="container">
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="https://jagsesports.github.io/jagsesports/#">Home</a>
+            </li>
+            <li>
+              <a href="livestream.html">Livestream</a>
+            </li>
+            <li>
+              <a href="teams.html">Teams</a>
+            </li>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="bracket.html">Bracket</a>
+            </li>
+            <li>
+                <a href="cart.html">Cart</a>
+            </li>
+            <li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a class="btn" href="https://jagsesports.github.io/jagsesports/#">
+      <div class="logo">
+        <div class="logo-btn">
+          <i class="logo-button"></i> Jag Esports
+        </div>
+      <img src="images/chatgpt nobg.png" alt="Jag Esports logo">
+      <a href="https://jagsesports.github.io/jagsesports/#">
+      </div>
+    </a>
+    <h1 id="countdown"></h1>
+      <div class="embed">
+        <iframe width="100%" height="1000" src="https://www.youtube.com/embed/e-_XznsmKyg?si=Ksa6YEGBqETP4JO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="footer">
+        <div class="main-footer">
+          <h1 style="color: #0a0a0a;">JAG ESPORTS</h1>
+          <ul class="socials">
+           <li>
+             <a href="https://www.instagram.com/acseghamschool?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <img src="images/instagram.png" alt="Instagram logo">
+             </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@acsinternationalschools?is_from_webapp=1&sender_device=pc" target="_blank">
+                <img style= "width: 65px; height: 65px; margin-left: 20px;" src="images/tiktok.png" alt="Twitch logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@jagesports" target="_blank">
+                <img style="width: 110px; height: 110px; margin-left: 0px;" src="images/yt.webp" alt="YouTube logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h1 style="color: #0a0a0a;">CONTACT</h1>
+          <p style="text-decoration: underline;">jaguaresports2000@gmail.com</p>
+          <p>+44 7435963366</p>
+        </div>
+        <div class="location">
+          <h1 style="color: #0a0a0a; margin-top: 50px;">LOCATION</h1>
+          <p>ACS Egham International School</p>
+          <p>London Road, Egham, Surrey, TW20 0HS</p>
+          <p>United Kingdom</p>
+        </div>
+      </div>
+    <script>
+    var countDownDate = new Date("19 May, 2025 14:05:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+      document.getElementById("countdown").innerHTML = "Livestream in: " + days + " days " + hours + " hrs " + minutes + " mins " + seconds + " secs ";
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "LIVE NOW!";
+      }
+    }, 1000);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

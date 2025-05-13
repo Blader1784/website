@@ -1,0 +1,374 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-colour: #0a0a0a;
+    --secondary-colour: #fa403c;
+    --tertiary-colour: #f7e4e4;
+}
+
+body{
+    font-family: archivo-black;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--primary-colour);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-colour);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--secondary-colour);
+}
+
+h1 {
+    width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+     color: var(--secondary-colour);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-colour);
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    color: var(--primary-colour);
+    line-height: 1.5;
+}
+
+.navbar {
+    background: var(--primary-colour);
+    padding: 0px;
+    margin:auto;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    margin-right: 0%;
+    padding-right: 0%;
+    width: fit-content;
+}
+
+.logo img {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 75px;
+    width: auto;
+    position: absolute;
+    left:0;
+    top: 0;
+    justify-self: left;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar .main-menu ul li a {
+    padding: 10px;
+    display: block;
+    font-weight: 600;
+    transition: 0.75s;
+    margin-top: 40px;
+    position: relative;
+}
+
+.navbar .main-menu ul li a::after {
+    content: '';
+    position: absolute;
+    align-content: center;
+    left: 50%;
+    bottom: 0;
+    top: auto;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-colour);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navbar .main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.container-logo {
+    max-width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.container {
+    max-width: 1100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    right: 50px;
+}
+
+.container-small {
+    max-width: 800px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-menu {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.btn {
+    position: absolute; 
+    left: 100px;
+    top: 30px;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.embed {
+    width: 100%;
+    height: auto;
+}
+
+.logo-btn {
+    margin-left: 70%;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials li img:hover {
+    transform: scale(1.2);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.footer {
+    background: var(--secondary-colour);
+    padding: 5px 0;
+    text-align: center;
+    columns: 3;
+    height: auto;
+}
+
+.teams {
+    color: var(--secondary-colour);
+}
+
+.team1 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team1 p {
+    column-span: none;
+}
+
+.team2 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team2 p {
+    column-span: none;
+}
+
+.team3 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team3 p {
+    column-span: none;
+}
+
+.team4 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team4 p {
+    column-span: none;
+}
+
+.team5 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team5 p {
+    column-span: none;
+}
+
+.team6 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team6 p {
+    column-span: none;
+}
+
+.team7 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team7 p {
+    column-span: none;
+}
+
+.team8 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team8 p {
+    column-span: none;
+}
+
+.team9 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team9 p {
+    column-span: none;
+}
+
+.team10 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team10 p {
+    column-span: none;
+}
+
+.team11 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team11 p {
+    column-span: none;
+}
+
+.team12 {
+    column-count: 2;
+    column-gap: none;
+    column-width: auto;
+    margin-bottom: 3%;
+}
+
+.team12 p {
+    column-span: none;
+}
+
+.teams {
+    margin: 3%;
+}
+
+.shop-item {
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-item img {
+    margin: 0px;
+    padding: 0px;
+}
+
+.h1 {
+    margin-bottom: 50px;
+}
