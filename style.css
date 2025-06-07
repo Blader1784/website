@@ -43,7 +43,7 @@ h1 {
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-     color: var(--secondary-colour);
+    color: var(--secondary-colour);
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -371,4 +371,69 @@ p {
 
 .h1 {
     margin-bottom: 50px;
+}
+
+.embed-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.embed-center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.embed-center3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.pro img {
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    max-width: 100%;
+}
+
+.pro {
+    flex: 1 1 300px; 
+    max-width: 400px;
+    text-align: center;
+  }
+
+.pro img:hover {
+    transform: scale(1.1);
+    margin-top: +2%;
+    margin-bottom: +2%;
+}
+
+.pro t:hover {
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    border-radius: 15px;
+    transform: scale(1.1);
+}
+
+.pro t {
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.pro img {
+    transition: transform 0.3s ease-in-out;
+    transition: margin 0.3s ease-in-out;
 }
